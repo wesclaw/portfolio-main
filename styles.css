@@ -1,0 +1,144 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+.logo{
+  width: 50px;
+}
+
+a{
+  text-transform: uppercase;
+}
+
+.user-name{
+  font-size: 4rem;
+  margin-bottom: 50px;
+}
+
+.git-image{
+  width: 25px;
+}
+
+.navbar{
+  position: fixed;
+  width: 100vw;
+}
+
+main{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lable-text{
+  font-size: 2rem;
+}
+
+.personal-info{
+  max-width: 700px;
+}
+
+.wrapper{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project{
+  width: 300px;
+  height: 400px;
+  border: 1px solid black;
+}
+
+.project-text{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+
+.contact-text{
+  font-size: 4rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.zeroOne{
+  color: rgb(163, 88, 163);
+  margin-left: 20px;
+  font-size: 5.5rem;
+}
+
+.zeroTwo{
+  color: rgb(37, 194, 194);
+  font-size: 5.5rem;
+}
+
+.contact-me{
+  margin-top: 100px;
+}
+
+.add-style{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.contact-me p{
+  max-width: 800px;
+  margin: auto;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+form{
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+@media (max-width: 1000px){
+  .project-text, .contact-text {
+    font-size: 3rem;
+  }
+
+  .zeroOne, .zeroTwo{
+    display: none;
+  }
+
+  
+}
