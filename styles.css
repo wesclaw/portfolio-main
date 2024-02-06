@@ -8,9 +8,25 @@ html{
   overflow-x: hidden;
 }
 
-body{
-  background-color: rgba(14, 105, 105, 0.616);
+body {
+	background: linear-gradient(-45deg, #5f75f1, #5b49bebb, #2492b9, #4c85cf);
+	background-size: 400% 400%;
+	animation: gradient 30s ease infinite;
+	height: 100vh;
 }
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
 
 .logo{
   width: 50px;
@@ -32,10 +48,13 @@ a{
 .navbar{
   position: fixed;
   width: 100vw;
-  transition: transform 0.2s;
   z-index: 99;
-  top: 0;
-  left: 0;
+  transition: .5s;
+}
+
+.nav-hidden{
+  transform: translateY(-80px);
+  transition: .5s;
 }
 
 main{
@@ -72,11 +91,6 @@ main{
   margin-bottom: 50px;
   font-size: 5rem;
   text-transform: uppercase;
-}
-
-.nav-hidden{
-  transform: translateY(-80px);
-  transition: .5s;
 }
 
 .contact-text{
@@ -127,6 +141,16 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+input[type=email]{
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+}
+
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -147,7 +171,7 @@ form{
 }
 
 footer{
-  background-color: #f2f2f2;
+  color: #f2f2f2;
   margin: 0;
   text-align: center;
 }

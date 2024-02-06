@@ -8,12 +8,9 @@ window.addEventListener('scroll', () => {
     navbar.classList.add('nav-hidden');
   } else {
     navbar.classList.remove('nav-hidden');
-
-    if (window.scrollY === 0) {
-      navbar.style.backgroundColor = ''; 
-    } else {
-      navbar.style.backgroundColor = '#f2f2f2'; 
-    }
+    navbar.style.backgroundColor = '#f2f2f2'; 
+  }if(window.scrollY===0){
+    navbar.style.backgroundColor = 'transparent'
   }
   lastScrollY = window.scrollY;
 });
