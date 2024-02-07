@@ -229,18 +229,5 @@ footer p {
   .git-image{
     width: 20px;
   }
-  /* this is what is causing the responsive problems */
-  .navbar{
-    position: unset !important;
-    width: unset !important;
-    z-index: unset !important;
-    transition: unset !important;
-    background-color: white !important;
-  }
-  
-  .nav-hidden{
-    transform: unset !important;
-    transition: unset !important;
-  }
-  /*  */
+
 }
