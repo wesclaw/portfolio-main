@@ -11,7 +11,7 @@ html{
 body {
 	background: linear-gradient(-45deg, #5f75f1, #5b49bebb, #2492b9, #4c85cf);
 	background-size: 400% 400%;
-	animation: gradient 30s ease infinite;
+	animation: gradient 25s ease infinite;
 	height: 100vh;
 }
 
@@ -26,7 +26,6 @@ body {
 		background-position: 0% 50%;
 	}
 }
-
 
 .logo{
   width: 50px;
@@ -212,6 +211,7 @@ footer p {
 }
 
 @media (max-width: 1000px){
+
   .project-text, .contact-text {
     font-size: 3rem;
   }
@@ -219,4 +219,28 @@ footer p {
   .zeroOne, .zeroTwo{
     display: none;
   }
+
+  .user-name{
+    font-size: 3rem;
+    margin-bottom: 50px;
+    color: ghostwhite;
+  }
+  
+  .git-image{
+    width: 20px;
+  }
+  /* this is what is causing the responsive problems */
+  .navbar{
+    position: unset !important;
+    width: unset !important;
+    z-index: unset !important;
+    transition: unset !important;
+    background-color: white !important;
+  }
+  
+  .nav-hidden{
+    transform: unset !important;
+    transition: unset !important;
+  }
+  /*  */
 }
