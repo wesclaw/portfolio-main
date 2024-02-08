@@ -12,7 +12,7 @@ body {
 	background: linear-gradient(-45deg, #5f75f1, #5b49bebb, #2492b9, #4c85cf);
 	background-size: 400% 400%;
 	animation: gradient 25s ease infinite;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 @keyframes gradient {
@@ -150,9 +150,6 @@ main{
   text-transform: uppercase;
   color: black;
   font-weight: 800;
-  /* background-image: url(images/honey.png);
-  background-position: center;
-  background-size: cover; */
 }
 
 .contact-btn:active{
@@ -212,8 +209,12 @@ footer p {
 
 @media (max-width: 1000px){
 
+  html, body{
+    overflow-x: hidden !important;
+  }
+
   .project-text, .contact-text {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .zeroOne, .zeroTwo{
@@ -221,6 +222,7 @@ footer p {
   }
 
   .user-name{
+    margin-top: 20px;
     font-size: 3rem;
     margin-bottom: 50px;
     color: ghostwhite;
@@ -230,4 +232,38 @@ footer p {
     width: 20px;
   }
 
+  .user-name{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: ghostwhite;
+  }
+
+  .navbar{
+    position: relative !important;
+    width: 100vw !important;
+    z-index: 99;
+    background-color: ghostwhite !important;
+  }
+
+  main{
+    height: unset !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-btn{
+    padding: 5px 20px;
+    border-radius: unset;
+    box-shadow: unset;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 800;
+    box-shadow: 1px 4px 0px rgba(0, 0, 0, 0.541);
+    margin-bottom: 50px;
+    background-image: url(images/honey.png);
+    background-position: center;
+    background-size: cover;
+  }
 }
